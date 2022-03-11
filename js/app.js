@@ -151,7 +151,7 @@ const showPosts = (posts) => {
     productsContainer.appendChild(div);
   });
 };
-
+// Display linked posts
 const displayLikedPosts = () => {
   const likedPosts = getLikedPosts();
   document.getElementById("liked").innerHTML='';
