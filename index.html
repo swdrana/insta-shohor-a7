@@ -88,10 +88,18 @@
         <h1>Reported posts</h1>
       </div>
     </main>
+    
     <section class="container my-5">
-      <article>
-        <h1>How does JavaScript work?</h1>
-        <p>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button"        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"       aria-expanded="false" aria-controls="flush-collapseOne">
+                  <h4>JavaScript কিভাবে কাজ করে?</h4>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse"           aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>
           <!-- My Content is Around 10 lines, see: https://prnt.sc/mJFeOReXB1Ce -->
           JavaScript কে বলা হয় Scripting Language. একে সাধারণত ব্রাউজারে
           (ক্লাইন্ট সাইড কম্পিউটারে) ব্যবহার করা হয়ে থাকে। এটি একটি হাই লেভেল
@@ -122,84 +130,95 @@
           সহজে করতে পারে।
           <br /><br />
           আর এভাবেই একটি JavaScript কোড কাজ করে থাকে।
-        </p>
-      </article>
-      <article>
-        <h1>
-          What's the difference between local storage and session storage?
-        </h1>
-        <p>
-          DevTool নিয়ে কাজ করতে গেলে আমাদের খুবিই প্রয়োজনীয় একটি ট্যাব হলঃ
-          Application Tab। যেটির মধ্যে আছে লোকাল স্টোরেজ ও সেশন স্টোরেজ নামে
-          দুটো জিনিষ এছাড়া এখানে আরও আছে কুকিজ, যেটা আমাদের আলোচনার বাহিরে! এখন
-          জেনে নেই এদের কাজ ও পার্থক্য নিয়ে-
-          <br /><br />
-          <strong>কাজঃ </strong> উভয়ের কাজ ই হল- কোন একটি ওয়েবসাইট সম্পর্কে কিছু
-          তথ্য ব্যবহারকারীর কম্পিউটারে রেখে দিয়ে User Exprience কে উন্নত করা।
-          একটা উদাহরণের মাধ্যমে বোঝার চেষ্টা করিঃ আমরা কম বেশি সবাই ফেসবুক
-          ব্যবহার করি কিন্তু প্রতিবার ফেসবুকে যেতে হলে আমাদের লগইন করার প্রয়োজন
-          পড়ে না (যদি না লগ আউট করা হয়) এখন কথা হলঃ কিভাবে কাজ হচ্ছে যদি আমরা
-          লগইন না করে থাকি? উত্তর হলঃ যখন প্রথম লগইন করা হয়েছিল তখনই ফেসবুক ঐ
-          ব্যবহার কারীর লোকাল স্টোরেজ ও সেশন স্টোরেজে কিছু তথ্য সংরক্ষণ করে রেখে
-          দিয়েছে জার ফলে প্রতিবার কম্পিউটার নতুন করে চালু করলেও ব্যবহারকারীকে
-          নতুন করে আর Login করার প্রয়োজন হয় না।
-          <br><br>
-          <strong>পার্থক্যঃ </strong>
-          <table class="table text-center">
-              <tr>
-                  <th>ক্রমিক নং</th>
-                  <th>লোকাল স্টোরেজ</th>
-                  <th>সেশন স্টোরেজ</th>
-              </tr>
-              <tr>
-                  <td>০১। </td>
-                <td>
-                    একে HTML 5 থেকে ব্যবহার হচ্ছে, কোন <b> মেয়াদ উত্তীর্ণ ছাড়ায় স্থায়ীভাবে </b>ডাটাকে সংরক্ষণ করতে। 
-                </td>
-                <td>
-                    এটি HTML 5 থেকে ব্যবহার হচ্ছে <b>কেবল মাত্র একটি সেশনে</b> ডাটা কে সংরক্ষণ করতে। 
-                </td> 
-              </tr>
-              <tr>
+                  </p>
+              </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button"        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"       aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <h4>লোকাল স্টোরেজ ও সেশন স্টোরেজ এর মধ্যে পার্থক্য কি?</h4>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse"           aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>
+            DevTool নিয়ে কাজ করতে গেলে আমাদের খুবিই প্রয়োজনীয় একটি ট্যাব হলঃ
+            Application Tab। যেটির মধ্যে আছে লোকাল স্টোরেজ ও সেশন স্টোরেজ নামে
+            দুটো জিনিষ এছাড়া এখানে আরও আছে কুকিজ, যেটা আমাদের আলোচনার বাহিরে! এখন
+            জেনে নেই এদের কাজ ও পার্থক্য নিয়ে-
+            <br /><br />
+            <strong>কাজঃ </strong> উভয়ের কাজ ই হল- কোন একটি ওয়েবসাইট সম্পর্কে কিছু
+            তথ্য ব্যবহারকারীর কম্পিউটারে রেখে দিয়ে User Exprience কে উন্নত করা।
+            একটা উদাহরণের মাধ্যমে বোঝার চেষ্টা করিঃ আমরা কম বেশি সবাই ফেসবুক
+            ব্যবহার করি কিন্তু প্রতিবার ফেসবুকে যেতে হলে আমাদের লগইন করার প্রয়োজন
+            পড়ে না (যদি না লগ আউট করা হয়) এখন কথা হলঃ কিভাবে কাজ হচ্ছে যদি আমরা
+            লগইন না করে থাকি? উত্তর হলঃ যখন প্রথম লগইন করা হয়েছিল তখনই ফেসবুক ঐ
+            ব্যবহার কারীর লোকাল স্টোরেজ ও সেশন স্টোরেজে কিছু তথ্য সংরক্ষণ করে রেখে
+            দিয়েছে জার ফলে প্রতিবার কম্পিউটার নতুন করে চালু করলেও ব্যবহারকারীকে
+            নতুন করে আর Login করার প্রয়োজন হয় না।
+            <br><br>
+            <strong>পার্থক্যঃ </strong>
+            <table class="table text-center">
+                <tr>
+                    <th>ক্রমিক নং</th>
+                    <th>লোকাল স্টোরেজ</th>
+                    <th>সেশন স্টোরেজ</th>
+                </tr>
+                <tr>
+                    <td>০১। </td>
                   <td>
-                      ০২। 
+                      একে HTML 5 থেকে ব্যবহার হচ্ছে, কোন <b> মেয়াদ উত্তীর্ণ ছাড়ায় স্থায়ীভাবে </b>ডাটাকে সংরক্ষণ করতে। 
                   </td>
                   <td>
-                      যেকোনো Window থেকে ব্যবহার যোগ্য। 
-                  </td>
-                  <td>
-                      একই Tab এর মধ্যে ব্যবহার যোগ্য। 
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      ০৩। 
-                  </td>
-                  <td>
-                        ধারণক্ষমতাঃ 10 MB
-                  </td>
-                  <td>
-                        ধারণক্ষমতাঃ 5 MB 
-                  </td>
-              </tr>
-              <tr>
-                  <td>
-                      ০৪। 
-                  </td>
-                  <td>
-                        বাবহারকারীকে আলাদা করে ডাটা Delete করতে হবে। 
-                  </td>
-                  <td>
-                        ব্রাউজার / Tab বন্ধ করলেই ডাটা Delete হয়ে যাবে। 
-                  </td>
-              </tr>
-          </table>
-        </p>
-      </article>
+                      এটি HTML 5 থেকে ব্যবহার হচ্ছে <b>কেবল মাত্র একটি সেশনে</b> ডাটা কে সংরক্ষণ করতে। 
+                  </td> 
+                </tr>
+                <tr>
+                    <td>
+                        ০২। 
+                    </td>
+                    <td>
+                        যেকোনো Window থেকে ব্যবহার যোগ্য। 
+                    </td>
+                    <td>
+                        একই Tab এর মধ্যে ব্যবহার যোগ্য। 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ০৩। 
+                    </td>
+                    <td>
+                          ধারণক্ষমতাঃ 10 MB
+                    </td>
+                    <td>
+                          ধারণক্ষমতাঃ 5 MB 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ০৪। 
+                    </td>
+                    <td>
+                          বাবহারকারীকে আলাদা করে ডাটা Delete করতে হবে। 
+                    </td>
+                    <td>
+                          ব্রাউজার / Tab বন্ধ করলেই ডাটা Delete হয়ে যাবে। 
+                    </td>
+                </tr>
+            </table>
+                    </p>
+                </div>
+              </div>
+            </div>
+        </div>
     </section>
     <footer></footer>
 
     <!-- add javascript  file  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
     <script src="./js/app.js"></script>
   </body>
 </html>
